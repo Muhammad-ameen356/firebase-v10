@@ -128,3 +128,18 @@ const getData = async () => {
 };
 
 getDataBtn.addEventListener("click", getData);
+
+// const getTodos = async () => {
+//   const q = query(collection(db, "todos"));
+//   const unsubscribe = onSnapshot(q, (querySnapshot) => {
+//     let item = "";
+//     querySnapshot.forEach((doc) => {
+//       //   cities.push(doc.data().todo);
+//       //   const el = document.createElement("li");
+//       //   el.innerText = doc.data().todo;
+//       //   list.appendChild(el);
+//       item += `<li>${doc.data().todo}</li>`;
+//     });
+//     list.innerHTML = item;
+//   });
+// };
