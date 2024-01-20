@@ -133,12 +133,11 @@ getDataBtn.addEventListener("click", getData);
 //   const q = query(collection(db, "todos"));
 //   const unsubscribe = onSnapshot(q, (querySnapshot) => {
 //     let item = "";
+//     let todos = [];
 //     querySnapshot.forEach((doc) => {
-//       //   cities.push(doc.data().todo);
-//       //   const el = document.createElement("li");
-//       //   el.innerText = doc.data().todo;
-//       //   list.appendChild(el);
-//       item += `<li>${doc.data().todo}</li>`;
+//       todos.push(doc.data());
+//       todos.sort((a, b) => a.timeStamp - b.timeStamp);
+//       item = todos.map((todo) => `<li>${todo.todo}</li>`).join("");
 //     });
 //     list.innerHTML = item;
 //   });
